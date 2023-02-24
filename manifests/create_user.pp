@@ -1,5 +1,6 @@
-user { 'newuser':
-  ensure => present,
-  home   => '/home/newuser',
-  shell  => '/bin/bash',
+user { 'testuser':
+  ensure     => present,
+  managehome => true,
+  home       => '/home/testuser',
+  password   => password('test_password'),
 }
