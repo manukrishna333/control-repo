@@ -1,5 +1,5 @@
 user { 'manu':
   ensure => present,
-  home   => '/home/newuser',
+  home   => '/home/manu',
   shell  => '/bin/bash',
 }
